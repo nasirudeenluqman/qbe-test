@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+}
+header {
+  position: fixed !important;
+  z-index: 1000;
+  top: 0px;
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+    rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.brand-wrap {
+  padding: 20px 10px;
+  display: flex;
+}
+.brand-name {
+  color: #0781f2;
+  font-weight: bold;
+  font-size: 20px;
+}
+.main-content {
+  margin-top: 66px;
+  padding: 48px;
+  background: #f8f8fa;
+  min-height: calc(100vh - 80px);
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+}
+.form-container {
+  padding: 40px 24px;
+  text-align: left;
+  background: #ffffff;
+  margin-top: 4px;
+  width: 600px;
+  border: 2px solid #0781f2;
+  border-radius: 10px;
+}
+
+.form-label {
+  width: 40%;
+  color: #0781f2;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 10px;
+}
+.input-wrapper {
+  display: flex;
+}
+.date-picker {
+  background: #ffffff;
+  border: 1px solid #0781f2;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+  width: 150px;
+  position: relative;
+}
+.date-picker::-webkit-datetime-edit-text,
+.date-picker::-webkit-datetime-edit-month-field,
+.date-picker::-webkit-datetime-edit-day-field,
+.date-picker::-webkit-datetime-edit-year-field {
+  color: #0781f2;
+}
+.date-picker:focus {
+  outline: none;
+}
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 48px;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 2px;
+  height: 13px;
+}
+.btn {
+  font-style: normal;
+  font-weight: 500;
+  padding: 16px 25px;
+  border: none;
+  border-radius: 9px;
+  text-align: center;
+}
+.submit-button {
+  background: #0781f2;
+  color: #fdfdfd;
+  cursor: pointer;
+}
+.disabled-button {
+  background: rgba(164, 208, 249, 0.25);
+  color: #a4d0f9;
+}
+.message-wrapper {
+  padding: 10px;
+  height: 20px;
+  margin-bottom: 15px;
+}
+.age-text {
+  color: #1fa564;
+  text-align: center;
+  font-weight: bold;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  position: absolute;
+  height: auto;
+  width: auto;
+  right: 0px;
+  top: 0;
+  bottom: 0;
+  left: 0px;
+  background: transparent;
+  color: transparent;
+}
